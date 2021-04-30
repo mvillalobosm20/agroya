@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/View/Inicio.master" AutoEventWireup="true" CodeFile="InicioSesion.aspx.cs" Inherits="View_InicioSesion" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/View/Inicio.master" AutoEventWireup="true" CodeFile="~/Controller/InicioSesion.aspx.cs" Inherits="View_InicioSesion" %>
 
 <script runat="server">
 
@@ -49,8 +49,8 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td colspan="2">
-                                                <asp:HyperLink ID="HP_Link" runat="server">Olvide mi contraseña</asp:HyperLink>
+                                            <td colspan="2" style="text-align: center">
+                                                <asp:HyperLink ID="HL_Recuperar" runat="server" style="text-align: center; font-size: medium">Recuperar Contraseña</asp:HyperLink>
                                             </td>
                                         </tr>
                                         <tr>
