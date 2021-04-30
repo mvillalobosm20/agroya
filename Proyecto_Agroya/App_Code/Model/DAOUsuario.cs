@@ -8,10 +8,11 @@ using System.Web;
 /// </summary>
 public class DAOUsuario
 {
-    public DAOUsuario()
+    public EUsuario login(EUsuario user)
     {
-        //
-        // TODO: Agregar aquí la lógica del constructor
-        //
+        using (var db = new Mapeo())
+        {
+            return db.usuario.Where(x => x.UserName.Equals(user.UserName) && x.Clave.Equals(user.Clave) && x.EstadoId == 1).FirstOrDefault();
+        }
     }
 }

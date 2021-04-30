@@ -11,4 +11,36 @@ public partial class View_InicioSesion : System.Web.UI.Page
     {
 
     }
+
+    protected void LoginButton_Click(object sender, EventArgs e)
+    {
+        EUsuario user = new EUsuario();
+        user.UserName = LN_Principal.UserName;
+        user.Clave = LN_Principal.Password;
+
+
+        user = new DAOUsuario().login(user);
+
+        if (user != null)
+        {
+            Session["user"] = user;
+            switch (user.RolId)
+            {
+                case 1:
+                    Response.Redirect("Administrador.aspx");
+                    break;
+                case 2:
+                    Response.Redirect("Agricultor.aspx");
+                    break;
+
+                case 3:
+                    Response.Redirect("Usuario.aspx");
+                    break;
+                default:
+                    break;
+            }
+        }
+        else
+            LN_Principal.FailureText = "Usuario Y/o Clave Incorrecta";
+    }
 }

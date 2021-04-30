@@ -2,10 +2,7 @@
 
 <script runat="server">
 
-    protected void LoginButton_Click(object sender, EventArgs e)
-    {
-
-    }
+    
 </script>
 
 
