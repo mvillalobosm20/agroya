@@ -57,7 +57,7 @@
             </tr>
             <tr>
                 <td class="auto-style18">
-                    <asp:Menu ID="Menu1" runat="server" StaticSubMenuIndent="16px" Orientation="Horizontal" Width="90%" Font-Bold="True" Font-Italic="False" Font-Names="Sitka Small" Font-Overline="False" Font-Size="X-Large" Font-Strikeout="False" Font-Underline="False" ForeColor="Black" RenderingMode="Table" Height="34px">
+                    <asp:Menu ID="Menu1" runat="server" StaticSubMenuIndent="16px" Orientation="Horizontal" Width="90%" Font-Bold="True" Font-Italic="False" Font-Names="Sitka Small" Font-Overline="False" Font-Size="X-Large" Font-Strikeout="False" Font-Underline="False" ForeColor="Black" RenderingMode="Table" Height="34px" style="font-size: small">
                         <Items>
                             <asp:MenuItem Text="INICIO" Value="INICIO" NavigateUrl="~/View/Index.aspx"></asp:MenuItem>
                             <asp:MenuItem Text="SOBRE AGROYA" Value="SOBRE AGROYA"></asp:MenuItem>
