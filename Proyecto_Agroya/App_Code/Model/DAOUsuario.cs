@@ -8,11 +8,13 @@ using System.Web;
 /// </summary>
 public class DAOUsuario
 {
-    public EUsuario login(EUsuario user)
+    public EUsuario Login(EUsuario user)
     {
         using (var db = new Mapeo())
         {
-            return db.usuario.Where(x => x.UserName.Equals(user.UserName) && x.Clave.Equals(user.Clave) && x.EstadoId == 1).FirstOrDefault();
+            EUsuario retornarU = new EUsuario();
+            retornarU = db.usuario.FirstOrDefault();
+            return retornarU;
         }
     }
 }

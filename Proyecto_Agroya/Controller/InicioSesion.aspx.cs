@@ -19,7 +19,7 @@ public partial class View_InicioSesion : System.Web.UI.Page
         user.Clave = LN_Principal.Password;
 
 
-        user = new DAOUsuario().login(user);
+        user = new DAOUsuario().Login(user);
 
         if (user != null)
         {
