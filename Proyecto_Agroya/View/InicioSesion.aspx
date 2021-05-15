@@ -52,8 +52,7 @@
                                         </tr>
                                         <tr>
                                             <td align="center" colspan="2" style="color:Red;">
-                                                <asp:Literal ID="FailureText" runat="server" EnableViewState="False"></asp:Literal>
-                                            </td>
+                                                &nbsp;</td>
                                         </tr>
                                         <tr>
                                             <td align="right" colspan="2">

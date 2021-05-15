@@ -6,32 +6,34 @@ using System.ComponentModel.DataAnnotations.Schema;
 [Table("usuario", Schema = "usuario")]
 public class EUsuario
 {
-    private int id;
-    private string nombre;
-    private string apellido;
-    private string userName;
-    private string clave;
-    private int rolId;
-    private string token;
-    private string session;
-    private string estadoId;
+
+    private int id_user;
+    private string username;
+    private string password;
     private string correo;
-    private Nullable<DateTime> token_reset;
     private DateTime fecha_registro;
     private string foto_user;
+    private string nombre;
+    private string apellido;
+    private string tipo_documento;
+    private int numero_documento;
+    private string ciudad_residencia;
+    private string direccion;
+    private int telefono;
+    private int tipo_usuario;
+    private string token_verificacion;
+    private Nullable<DateTime> token_reset;
+    private int estado_user;
+
     [Key]
     [Column("id_user")]
-    public int Id { get => id; set => id = value; }
+    public int Id_user { get => id_user; set => id_user = value; }
     [Column("username")]
-    public string UserName { get => userName; set => userName = value; }
+    public string Username { get => username; set => username = value; }
     [Column("password")]
-    public string Clave { get => clave; set => clave = value; }
+    public string Password { get => password; set => password = value; }
     [Column("correo")]
     public string Correo { get => correo; set => correo = value; }
-    [Column("token_reset")]
-    public DateTime? Token_reset { get => this.token_reset; set => this.token_reset = value; }
-    [Column("estado_user")]
-    public string EstadoId { get => estadoId; set => estadoId = value; }
     [Column("fecha_registro")]
     public DateTime Fecha_registro { get => fecha_registro; set => fecha_registro = value; }
     [Column("foto_user")]
@@ -41,18 +43,22 @@ public class EUsuario
     [Column("apellido")]
     public string Apellido { get => apellido; set => apellido = value; }
     [Column("tipo_documento")]
-    public string tipo_documento { get => tipo_documento; set => tipo_documento = value; }
+    public string Tipo_documento { get => tipo_documento; set => tipo_documento = value; }
     [Column("numero_documento")]
-    public string numero_documento { get => numero_documento; set => numero_documento = value; }
+    public int Numero_documento { get => numero_documento; set => numero_documento = value; }
     [Column("ciudad_residencia")]
-    public string ciudad_residencia { get => ciudad_residencia; set => ciudad_residencia = value; }
+    public string Ciudad_residencia { get => ciudad_residencia; set => ciudad_residencia = value; }
     [Column("direccion")]
-    public string direccion { get => direccion; set => direccion = value; }
+    public string Direccion { get => direccion; set => direccion = value; }
     [Column("telefono")]
-    public int telefono { get => telefono; set => telefono = value; }
+    public int Telefono { get => telefono; set => telefono = value; }
     [Column("tipo_usuario")]
-    public int RolId { get => rolId; set => rolId = value; }
+    public int Tipo_usuario { get => tipo_usuario; set => tipo_usuario = value; }
     [Column("token_verificacion")]
-    public string Token { get => token; set => token = value; }
-    
+    public string Token_verificacion { get => token_verificacion; set => token_verificacion = value; }
+    [Column("token_reset")]
+    public DateTime? Token_reset { get => token_reset; set => token_reset = value; }
+    [Column("estado_user")]
+    public int Estado_user { get => estado_user; set => estado_user = value; }
+
 }
