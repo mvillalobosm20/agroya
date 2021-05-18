@@ -19,7 +19,7 @@ public class EUsuario
     private int numero_documento;
     private string ciudad_residencia;
     private string direccion;
-    private int telefono;
+    private double telefono;
     private int tipo_usuario;
     private string token_verificacion;
     private Nullable<DateTime> token_reset;
@@ -51,7 +51,7 @@ public class EUsuario
     [Column("direccion")]
     public string Direccion { get => direccion; set => direccion = value; }
     [Column("telefono")]
-    public int Telefono { get => telefono; set => telefono = value; }
+    public double Telefono { get => telefono; set => telefono = value; }
     [Column("tipo_usuario")]
     public int Tipo_usuario { get => tipo_usuario; set => tipo_usuario = value; }
     [Column("token_verificacion")]
@@ -60,5 +60,4 @@ public class EUsuario
     public DateTime? Token_reset { get => token_reset; set => token_reset = value; }
     [Column("estado_user")]
     public int Estado_user { get => estado_user; set => estado_user = value; }
-
 }

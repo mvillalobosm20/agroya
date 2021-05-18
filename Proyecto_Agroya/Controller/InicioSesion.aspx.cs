@@ -41,6 +41,6 @@ public partial class View_InicioSesion : System.Web.UI.Page
             }
         }
         else
-            LN_Principal.FailureText = "Usuario Y/o Clave Incorrecta";
-    }
+            LN_Principal.FailureText = "Contraseña incorrecta revise la entrada";
+    }   
 }
