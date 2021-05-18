@@ -15,4 +15,12 @@ public class DAOUsuario
             
             }
         }
+
+    public EUsuario validarCorreo(string correo)
+    {
+        using (var db = new Mapeo())
+        {
+            return db.usuario.Where(x => x.Correo.ToLower().Equals(correo.ToLower())).FirstOrDefault();
+        }
+    }
 }
