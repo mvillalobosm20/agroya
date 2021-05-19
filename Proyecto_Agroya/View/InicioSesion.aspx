@@ -53,7 +53,7 @@
                                         </tr>
                                         <tr>
                                             <td colspan="2" style="text-align: center">
-                                                <asp:HyperLink ID="HL_Recuperar" runat="server" style="text-align: center; font-size: medium">Recuperar Contraseña</asp:HyperLink>
+                                                <asp:HyperLink ID="HL_Recuperar" runat="server" style="text-align: center; font-size: medium" NavigateUrl="~/View/RecuperarContrasena.aspx">Recuperar Contraseña</asp:HyperLink>
                                             </td>
                                         </tr>
                                         <tr>

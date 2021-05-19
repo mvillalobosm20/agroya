@@ -21,7 +21,9 @@
         </tr>
         <tr>
             <td>&nbsp;</td>
-            <td>&nbsp;</td>
+            <td>
+                <asp:Label ID="L_Mensaje" runat="server"></asp:Label>
+            </td>
             <td>&nbsp;</td>
         </tr>
     </table>
