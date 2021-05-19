@@ -14,9 +14,11 @@ public partial class View_Recuperar : System.Web.UI.Page
             EUsuario user = new DAOUsuario().buscarToken(Request.QueryString[0]);
 
             if (user == null)
-                this.RegisterStartupScript("mensaje", "<script type='text/javascript'>alert('El Token es invalido. Genere uno nuevo');window.location=\"Login.aspx\"</script>");
+                this.RegisterStartupScript("mensaje", "<script type='text/javascript'>alert('El Token es invalido. Genere uno nuevo');window.location=\"InicioSesion.aspx\"</script>");
             else if (user.Token_reset < DateTime.Now)
-                this.RegisterStartupScript("mensaje", "<script type='text/javascript'>alert('El Token esta vencido. Genere uno nuevo');window.location=\"Login.aspx\"</script>");
+            {
+                this.RegisterStartupScript("mensaje", "<script type='text/javascript'>alert('El Token esta vencido. Genere uno nuevo');window.location=\"InicioSesion.aspx\"</script>");
+            }
             else
                 Session["userRecuperado"] = user;
         }

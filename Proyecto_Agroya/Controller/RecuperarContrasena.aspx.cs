@@ -28,8 +28,8 @@ public partial class View_Recuperarcontra : System.Web.UI.Page
             user.Estado_user = 2;
 
             new DAOUsuario().actualizarUsuario(user);
-            string mensaje = "Por favor ingrese al siguiente link: http://localhost:55381/View/Recuperar.aspx?" + user.Token_verificacion;
-            new Correo().enviarCorreoPlantilla("softwareagroya@gmail.com", user.Token_verificacion, mensaje);
+            string mensaje = "Por favor ingrese al siguiente link: http://localhost:60604/View/Recuperar.aspx?=" +user.Token_verificacion;
+            new Correo().enviarCorreo(correo, userToken: user.Token_verificacion, mensaje: mensaje);
 
             L_Mensaje.Text = "Hemos Enviado un correo electronico a su correo guardado. Por favor seguir instrucciones";
         }
