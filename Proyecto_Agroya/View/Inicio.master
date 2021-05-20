@@ -62,7 +62,7 @@
                             <asp:MenuItem Text="INICIO" Value="INICIO" NavigateUrl="~/View/Index.aspx"></asp:MenuItem>
                             <asp:MenuItem Text="SOBRE AGROYA" Value="SOBRE AGROYA"></asp:MenuItem>
                             <asp:MenuItem Text="CATALOGO" Value="CATALOGO" NavigateUrl="~/View/Catalogo.aspx"></asp:MenuItem>
-                            <asp:MenuItem Text="PRODUCTORES" Value="PRODUCTORES"></asp:MenuItem>
+                            <asp:MenuItem Text="PRODUCTORES" Value="PRODUCTORES" NavigateUrl="~/View/Registro.aspx"></asp:MenuItem>
                             <asp:MenuItem Text="CONTACTO" Value="CONTACTO"></asp:MenuItem>
                             <asp:MenuItem Text="P.Q.R.S" Value="P.Q.R.S"></asp:MenuItem>
                         </Items>
