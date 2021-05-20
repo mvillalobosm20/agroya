@@ -59,7 +59,7 @@
                 <td class="auto-style18">
                     <asp:Menu ID="Menu1" runat="server" StaticSubMenuIndent="16px" Orientation="Horizontal" Width="60%" Font-Bold="True" Font-Italic="False" Font-Names="Sitka Small" Font-Overline="False" Font-Size="X-small" Font-Strikeout="False" Font-Underline="False" ForeColor="Black" RenderingMode="Table" Height="34px" OnMenuItemClick="Menu1_MenuItemClick">
                         <Items>
-                            <asp:MenuItem Text="INICIO" Value="INICIO" NavigateUrl="~/View/Index.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="INICIO" Value="INICIO" NavigateUrl="~/View/Inicio.aspx"></asp:MenuItem>
                             <asp:MenuItem Text="SOBRE AGROYA" Value="SOBRE AGROYA"></asp:MenuItem>
                             <asp:MenuItem Text="CATALOGO" Value="CATALOGO" NavigateUrl="~/View/Catalogo.aspx"></asp:MenuItem>
                             <asp:MenuItem Text="PRODUCTORES" Value="PRODUCTORES"></asp:MenuItem>
