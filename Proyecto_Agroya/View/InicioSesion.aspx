@@ -7,6 +7,12 @@
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    <style type="text/css">
+        .auto-style31 {
+            height: 170px;
+            width: 302px;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <table class="auto-style1">
@@ -22,7 +28,7 @@
                     <LayoutTemplate>
                         <table cellpadding="4" cellspacing="0" style="border-collapse:collapse;">
                             <tr>
-                                <td>
+                                <td class="auto-style31">
                                     <table cellpadding="0">
                                         <tr>
                                             <td align="center" colspan="2" style="color:White;background-color:#00773F;font-size:medium; font-weight:bold;">Iniciar sesión</td>
@@ -47,13 +53,13 @@
                                         </tr>
                                         <tr>
                                             <td colspan="2" style="text-align: center">
-                                                <asp:HyperLink ID="HL_Recuperar" runat="server" style="text-align: center; font-size: medium">Recuperar Contraseña</asp:HyperLink>
+                                                <asp:HyperLink ID="HL_Recuperar" runat="server" style="text-align: center; font-size: medium" NavigateUrl="~/View/RecuperarContrasena.aspx">Recuperar Contraseña</asp:HyperLink>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td align="center" colspan="2" style="color:Red;">
-                                                <asp:Literal ID="FailureText" runat="server" EnableViewState="False"></asp:Literal>
-                                            </td>
+                                                        <asp:Literal ID="FailureText" runat="server"></asp:Literal>
+                                                    </td>
                                         </tr>
                                         <tr>
                                             <td align="right" colspan="2">

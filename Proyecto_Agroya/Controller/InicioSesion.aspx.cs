@@ -15,16 +15,16 @@ public partial class View_InicioSesion : System.Web.UI.Page
     protected void LoginButton_Click(object sender, EventArgs e)
     {
         EUsuario user = new EUsuario();
-        user.UserName = LN_Principal.UserName;
-        user.Clave = LN_Principal.Password;
+        user.Username = LN_Principal.UserName;
+        user.Password = LN_Principal.Password;
 
 
-        user = new DAOUsuario().login(user);
+        user = new DAOUsuario().Login(user);
 
         if (user != null)
         {
             Session["user"] = user;
-            switch (user.RolId)
+            switch (user.Tipo_usuario)
             {
                 case 1:
                     Response.Redirect("Administrador.aspx");
@@ -41,6 +41,6 @@ public partial class View_InicioSesion : System.Web.UI.Page
             }
         }
         else
-            LN_Principal.FailureText = "Usuario Y/o Clave Incorrecta";
-    }
+            LN_Principal.FailureText = "Contraseña incorrecta revise la entrada";
+    }   
 }
