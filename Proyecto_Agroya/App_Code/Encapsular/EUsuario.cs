@@ -24,7 +24,6 @@ public class EUsuario
     private string token_verificacion;
     private Nullable<DateTime> token_reset;
     private int estado_user;
-    private string session;
 
     [Key]
     [Column("id_user")]
@@ -61,6 +60,4 @@ public class EUsuario
     public DateTime? Token_reset { get => token_reset; set => token_reset = value; }
     [Column("estado_user")]
     public int Estado_user { get => estado_user; set => estado_user = value; }
-    [Column("session")]
-    public string Session { get => session; set => session = value; }
 }
