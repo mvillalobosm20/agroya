@@ -62,9 +62,19 @@
                             <asp:MenuItem Text="INICIO" Value="INICIO" NavigateUrl="~/View/Inicio.aspx"></asp:MenuItem>
                             <asp:MenuItem Text="SOBRE AGROYA" Value="SOBRE AGROYA" NavigateUrl="~/View/SobreNosotros.aspx"></asp:MenuItem>
                             <asp:MenuItem Text="CATALOGO" Value="CATALOGO" NavigateUrl="~/View/Catalogo.aspx"></asp:MenuItem>
+<<<<<<< HEAD
+<<<<<<< HEAD
+                            <asp:MenuItem Text="PRODUCTORES" Value="PRODUCTORES" NavigateUrl="~/View/Registro.aspx"></asp:MenuItem>
+=======
+                            <asp:MenuItem Text="PRODUCTORES" Value="PRODUCTORES"></asp:MenuItem>
+>>>>>>> parent of cbfb7cf (19 de mayo 1148pm)
+                            <asp:MenuItem Text="CONTACTO" Value="CONTACTO"></asp:MenuItem>
+                            <asp:MenuItem Text="P.Q.R.S" Value="P.Q.R.S"></asp:MenuItem>
+=======
                             <asp:MenuItem Text="PRODUCTORES" Value="PRODUCTORES" NavigateUrl="~/View/InicioSesion.aspx"></asp:MenuItem>
                             <asp:MenuItem Text="CONTACTO" Value="CONTACTO" NavigateUrl="~/View/Contacto.aspx"></asp:MenuItem>
                             <asp:MenuItem Text="P.Q.R.S" Value="P.Q.R.S" NavigateUrl="~/View/PQRS.aspx"></asp:MenuItem>
+>>>>>>> 42a00e3487ba9aed5c4df02c5f26f9bfa26b48d0
                         </Items>
                     </asp:Menu>
                 </td>
