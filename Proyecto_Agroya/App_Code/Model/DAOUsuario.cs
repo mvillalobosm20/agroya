@@ -44,4 +44,12 @@ public class DAOUsuario
             db.SaveChanges();
         }
     }
+    public List<EUsuario> obtenerEstado()
+    {
+        using (var db = new Mapeo())
+        {
+            return db.usuario.ToList();
+        }
+
+    }
 }
