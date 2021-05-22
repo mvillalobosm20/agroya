@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Mail;
 using System.Web;
-using System.Web.UI.WebControls;
 
 /// <summary>
 /// Descripción breve de Correo
@@ -27,12 +26,12 @@ public class Correo
             MailMessage mail = new MailMessage();
             SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
             //Especificamos el correo desde el que se enviará el Email y el nombre de la persona que lo envía
-            mail.From = new MailAddress("mvillalobosm20@gmail.com", "Correo de Recuperación");
+            mail.From = new MailAddress("prueba@gmail.com", "Correo de Recuperación");
 
             //Aquí ponemos el asunto del correo
             mail.Subject = "Recuperación Contraseña";
             //Aquí ponemos el mensaje que incluirá el correo
-            mail.Body = "Por favor ingrese al siguiente link: http://localhost:60604/View/Recuperar.aspx?=" +  userToken;
+            mail.Body = "Por favor ingrese al siguiente link: http://localhost:55381/View/Recuperar.aspx?" +  userToken;
             //Especificamos a quien enviaremos el Email, no es necesario que sea Gmail, puede ser cualquier otro proveedor
             mail.To.Add(correoDestino);
             //Si queremos enviar archivos adjuntos tenemos que especificar la ruta en donde se encuentran
@@ -51,10 +50,5 @@ public class Correo
         {
 
         }
-    }
-
-    public void enviarCorreo(TextBox tB_Correo, string token_verificacion, string mensaje)
-    {
-        throw new NotImplementedException();
     }
 }
