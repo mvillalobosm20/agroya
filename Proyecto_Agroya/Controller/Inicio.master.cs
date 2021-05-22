@@ -14,7 +14,7 @@ public partial class View_Inicio : System.Web.UI.MasterPage
 
     protected void B_InicioSesion_Click(object sender, EventArgs e)
     {
-        Response.Redirect("InicioSesion.aspx");
+        Response.Redirect("Ingresar.aspx");
     }
 
     protected void Menu1_MenuItemClick(object sender, MenuEventArgs e)
