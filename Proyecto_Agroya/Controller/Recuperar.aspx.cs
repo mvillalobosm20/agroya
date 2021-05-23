@@ -14,9 +14,9 @@ public partial class View_Recuperar : System.Web.UI.Page
             EUsuario user = new DAOUsuario().buscarToken(Request.QueryString[0]);
 
             if (user == null)
-                this.RegisterStartupScript("mensaje", "<script type='text/javascript'>alert('El Token es invalido. Genere uno nuevo');window.location=\"Login.aspx\"</script>");
+                this.RegisterStartupScript("mensaje", "<script type='text/javascript'>alert('El Token es invalido. Genere uno nuevo');window.location=\"Ingresar.aspx\"</script>");
             else if (user.Token_reset < DateTime.Now)
-                this.RegisterStartupScript("mensaje", "<script type='text/javascript'>alert('El Token esta vencido. Genere uno nuevo');window.location=\"Login.aspx\"</script>");
+                this.RegisterStartupScript("mensaje", "<script type='text/javascript'>alert('El Token esta vencido. Genere uno nuevo');window.location=\"Ingresar.aspx\"</script>");
             else
                 Session["userRecuperado"] = user;
         }
@@ -54,15 +54,18 @@ public partial class View_Recuperar : System.Web.UI.Page
             return;
         }
 
-        EUsuario user = (EUsuario)Session["userRecuperado"];
 
+        EUsuario user = (EUsuario)Session["userRecuperado"];
+        RegisterStartupScript("mensaje", "<script type='text/javascript'>alert('Contraseña Modificada Correctamente')</script>");
         user.Token_verificacion = null;
         user.Token_reset = null;
         user.Estado_user = 1;
         user.Password = TB_Contrasena.Text;
 
+
         new DAOUsuario().actualizarUsuario(user);
-        ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Contraseña Modificada Correctamente')", true);
+
         Response.Redirect("Ingresar.aspx");
     }
+
 }
