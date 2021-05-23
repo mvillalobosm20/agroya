@@ -23,7 +23,7 @@ public partial class View_Recuperar : System.Web.UI.Page
 
         else
         {
-            Response.Redirect("InicioSesion.aspx");
+            Response.Redirect("Ingresar.aspx");
         }
     }
 
@@ -43,7 +43,7 @@ public partial class View_Recuperar : System.Web.UI.Page
         user.Password = TB_Contrasena.Text;
 
         new DAOUsuario().actualizarUsuario(user);
-        Response.Redirect("InicioSesion.aspx");
+        Response.Redirect("Ingresar.aspx");
     }
 
     protected void B_Guardar_Click1(object sender, EventArgs e)
@@ -62,6 +62,7 @@ public partial class View_Recuperar : System.Web.UI.Page
         user.Password = TB_Contrasena.Text;
 
         new DAOUsuario().actualizarUsuario(user);
-        Response.Redirect("InicioSesion.aspx");
+        ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Contraseña Modificada Correctamente')", true);
+        Response.Redirect("Ingresar.aspx");
     }
 }

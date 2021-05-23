@@ -31,7 +31,7 @@ public class Correo
             //Aquí ponemos el asunto del correo
             mail.Subject = "Recuperación Contraseña";
             //Aquí ponemos el mensaje que incluirá el correo
-            mail.Body = "Por favor ingrese al siguiente link: http://localhost:55381/View/Recuperar.aspx?" +  userToken;
+            mail.Body = "Por favor ingrese al siguiente link: http://localhost:60604/View/Recuperar.aspx?" +  userToken;
             //Especificamos a quien enviaremos el Email, no es necesario que sea Gmail, puede ser cualquier otro proveedor
             mail.To.Add(correoDestino);
             //Si queremos enviar archivos adjuntos tenemos que especificar la ruta en donde se encuentran
