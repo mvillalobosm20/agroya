@@ -51,7 +51,7 @@
                         <asp:Label ID="lb_error" runat="server" CssClass="text-danger" Text=""></asp:Label>
                     </div>
                 </div>
-        </fieldset>
+       
     </div>
      
 </asp:Content>
