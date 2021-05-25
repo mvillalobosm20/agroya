@@ -222,9 +222,9 @@
             <form action="/">
                 <hr>
                 <div class="accounttype">
-                    <input type="radio" value="None" id="radioOne" name="account" checked />
-                    <label for="radioOne" class="radio" chec>Agricultor</label>
-                    <input type="radio" value="None" id="radioTwo" name="account" />
+                    <input type="radio" value="2" id="radioOne" name="account" checked />
+                    <label for="radioOne" class="radio" >Agricultor</label>
+                    <input type="radio" value="3" id="radioTwo" name="account" />
                     <label for="radioTwo" class="radio">Cliente</label>
                 </div>
                 <hr>
@@ -237,7 +237,7 @@
                     <label id="icon" for="name"><i class="icon-folder-open"></i></label>
                     <input type="text" name="name" id="TB_TipodocumentoRegistro" placeholder="Tipo de Documento" required />
                     <label id="icon" for="name"><i class="icon-folder-open"></i></label>
-                    <input type="password" name="name" id="TB_NumerodocumentoRegistro" placeholder="Número de Documento" required />
+                    <input type="integer" name="name" id="TB_NumerodocumentoRegistro" placeholder="Número de Documento" required />
                     <label id="icon" for="name"><i class="icon-home"></i></label>
                     <input type="text" name="name" id="TB_CiudadRegistro" placeholder="Ciudad" required />
                     <label id="icon" for="name"><i class="icon-home"></i></label>
