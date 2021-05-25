@@ -143,7 +143,7 @@ p{
 
     <div class="formulario">      
       <h1>Formulario de contacto</h1>
-        <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
+        <h3>Escríbenos y en breve los pondremos en contacto.</h3>
 
 
           <form action="submeter-formulario.php" method="post">       
@@ -183,10 +183,10 @@ p{
                                     <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
                                 </p>                    
               
-                <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+                <button type="submit" name="enviar_formulario" id="enviar" style="max-width: 95%;"><p style="padding-top: 3%;">Enviar</p></button>
 
                 <p class="aviso">
-                  <span class="obligatorio"> * </span>los campos son obligatorios.
+                  Los campos marcados con <span class="obligatorio">* </span>son obligatorios.
                 </p>          
             
           </form>

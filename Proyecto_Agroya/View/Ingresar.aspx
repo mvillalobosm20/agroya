@@ -50,9 +50,7 @@
                     <div class="col-md-6"> 
                         <asp:Label ID="lb_error" runat="server" CssClass="text-danger" Text=""></asp:Label>
                     </div>
-                </div>
-       
-    </div>
-     
+                </div>       
+    </div>     
 </asp:Content>
 

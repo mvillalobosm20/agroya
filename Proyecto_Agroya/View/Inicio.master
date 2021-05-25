@@ -24,12 +24,10 @@
         .auto-style3 {
             height: 15%;
         }
-
         .auto-style10 {
             width: 10%;
             text-align: center;
         }
-
         .auto-style17 {
             text-align: right;
             height: 30%;
@@ -58,6 +56,10 @@
         .auto-style30 {
             height: 23px;
         }
+        #I_LogoAgroya {
+            width: 80% !important;
+            height: 80%;
+        }
     </style>
 </head>
 <body>
@@ -66,14 +68,14 @@
             <table class="auto-style1">
                 <tr>
                     <td class="auto-style10" rowspan="3">
-                        <asp:Image ID="I_LogoAgroya" runat="server" ImageUrl="~/Imagenes/LogoAgroya.png" Width="30%" />
+                        <asp:Image ID="I_LogoAgroya" runat="server" ImageUrl="~/Imagenes/LogoAgroya.png"/>
                     </td>
                     <td class="auto-style3"></td>
                     <td class="auto-style25">&nbsp;</td>
                 </tr>
                 <tr>
                     <td class="auto-style18">
-                        <asp:Menu ID="Menu1" runat="server" StaticSubMenuIndent="16px" Orientation="Horizontal" Width="60%" Font-Bold="True" Font-Italic="False" Font-Names="Sitka Small" Font-Overline="False" Font-Size="X-small" Font-Strikeout="False" Font-Underline="False" ForeColor="Black" RenderingMode="Table" Height="34px" OnMenuItemClick="Menu1_MenuItemClick">
+                        <asp:Menu ID="Menu1" runat="server" StaticSubMenuIndent="16px" Orientation="Horizontal" Width="100%" Font-Bold="True" Font-Italic="False" Font-Names="Sitka Small" Font-Overline="False" Font-Size="X-small" Font-Strikeout="False" Font-Underline="False" ForeColor="Black" RenderingMode="Table" Height="90px" OnMenuItemClick="Menu1_MenuItemClick">
                             <Items>
                                 <asp:MenuItem Text="INICIO" Value="INICIO" NavigateUrl="~/View/Inicio.aspx"></asp:MenuItem>
                                 <asp:MenuItem Text="REGISTRO" Value="REGISTRO" NavigateUrl="~/View/Registro.aspx"></asp:MenuItem>
@@ -81,16 +83,14 @@
                                 <asp:MenuItem Text="PRODUCTORES" Value="PRODUCTORES" NavigateUrl="~/View/Ingresar.aspx"></asp:MenuItem>
                                 <asp:MenuItem Text="CONTACTO" Value="CONTACTO" NavigateUrl="~/View/Contacto.aspx"></asp:MenuItem>
                                 <asp:MenuItem Text="P.Q.R.S" Value="P.Q.R.S" NavigateUrl="~/View/PQRS.aspx"></asp:MenuItem>
-                            </Items>
+                            </Items>                            
                         </asp:Menu>
                     </td>
-                    <td class="auto-style26">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style17" colspan="2">
-                        <asp:Button ID="B_InicioSesion" runat="server" BackColor="#00773F" Font-Bold="True" Font-Names="Sitka Small" Font-Size="Medium" ForeColor="White" Height="46px" OnClick="B_InicioSesion_Click" Text="INICIAR SESIÓN" Width="8%" />
-                    </td>
-                </tr>
+                    <td class="auto-style17">
+                    <asp:Button ID="Button2" runat="server" BackColor="#00773F" Font-Bold="True" Font-Names="Sitka Small" Font-Size="Medium" ForeColor="White" Height="46px" OnClick="B_InicioSesion_Click" Text="INICIAR SESIÓN" Width="100%"/>
+                    </td>  
+                        <td class="auto-style26">&nbsp;</td>
+                </tr>            
                 <tr>
                     <td class="auto-style20" colspan="3"></td>
                 </tr>
