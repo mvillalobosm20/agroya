@@ -16,12 +16,7 @@
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title></title>
-</head>
+
 <style>
     body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6,
     pre, form, fieldset, input, textarea, p, blockquote, th, td {
@@ -73,7 +68,7 @@
     .testbox {
         margin: 20px auto;
         padding-bottom: 30px;
-        width: 70%;
+        width: 60%;
         height: auto;
         -webkit-border-radius: 8px/7px;
         -moz-border-radius: 8px/7px;
@@ -165,7 +160,7 @@
         display: inline-block;
         width: 30px;
         background-color: #00773F;
-        padding: 8px 0px 8px 15px;
+        padding: 1px 0px 1px 4px;
         margin-left: 15px;
         -webkit-border-radius: 4px 0px 0px 4px;
         -moz-border-radius: 4px 0px 0px 4px;
@@ -196,7 +191,7 @@
         display: inline-block;
         float: right;
         text-decoration: none;
-        width: 50px;
+        width: 150px;
         height: 27px;
         -webkit-border-radius: 5px;
         -moz-border-radius: 5px;
@@ -218,11 +213,7 @@
             box-shadow: none;
         }
 </style>
-<body>
-    <form id="form1" runat="Server">
-        <div>
-        </div>
-    </form>
+
 
 
     <div class="testbox">
@@ -242,7 +233,7 @@
                     <label id="icon" for="name"><i class="icon-user "></i></label>
                     <input type="text" name="name" id="TB_NombresRegistro" placeholder="Nombres" required />
                     <label id="icon" for="name"><i class="icon-user"></i></label>
-                    <input type="text" name="name" id="TB_Apellidos" placeholder="Apellidos" required />
+                    <input type="text" name="name" id="TB_Apellidos" placeholder="Apellidos" required />                    
                     <label id="icon" for="name"><i class="icon-folder-open"></i></label>
                     <input type="text" name="name" id="TB_TipodocumentoRegistro" placeholder="Tipo de Documento" required />
                     <label id="icon" for="name"><i class="icon-folder-open"></i></label>
@@ -270,11 +261,10 @@
     <input type="radio" value="None" id="female" name="gender" />
     <label for="female" class="radio">Female</label> 
                 </div>-->
-                <p>By clicking Register, you agree on our <a href="#">terms and condition</a>.</p>
-                <a href="#" class="button">Registrar</a>
+                <p>Consulte nuestro  <a href="#">Manual De Usuario</a>.</p>
+                <a href="#" class="button" style="margin-left: 40%; text-align: center;">Registrar</a>
             </form>
         </div>
     </div>
-</body>
 </html>
     </asp:Content>
