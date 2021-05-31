@@ -53,10 +53,55 @@ public class DAOUsuario
 
     }
 
-    //public void registrarUsuario(EUsuario )
-    //{
-    //    Mapeo a = new Mapeo();
-    //    a.usuario.Add();
-    //    a.SaveChanges();
-    //}
+    public void registrarUsuario(EUsuario usuario)
+    {
+      Mapeo a = new Mapeo();
+        a.usuario.Add(usuario);
+        a.SaveChanges();
+    }
+
+    public List<ERol> obtenerroles()
+    {
+        List<ERol> lista = new List<ERol>();
+        using (var db = new Mapeo())
+        {
+            lista = db.rol.ToList();
+        }
+
+        ERol rol = new ERol();
+        rol.Tipo_usuario = "-- Seleccione --";
+        rol.Id_rol = 0;
+
+        lista.Add(rol);
+
+        return lista.OrderBy(x => x.Tipo_usuario).ToList();
+    }
+
+    public void editarUsuario(EUsuario aEditarUsuario)
+    {
+        using (var db = new Mapeo())
+        {
+            EUsuario usuarioAntiguo = db.usuario.Where(x => x.Id_user == aEditarUsuario.Id_user).FirstOrDefault();
+            usuarioAntiguo.Nombre = aEditarUsuario.Nombre;
+            // usuarioAntiguo.rolId = aEditarUsuario.rolId;
+            usuarioAntiguo.Apellido = aEditarUsuario.Apellido;
+            usuarioAntiguo.Ciudad_residencia = aEditarUsuario.Ciudad_residencia;
+            usuarioAntiguo.Direccion = aEditarUsuario.Direccion;
+            usuarioAntiguo.Telefono = aEditarUsuario.Telefono;
+            
+            var enty = db.Entry(usuarioAntiguo);
+            enty.State = EntityState.Modified;
+            db.SaveChanges();
+        }
+    }
+    public void eliminar(EUsuario usuarioElminado)
+    {
+        using (var db = new Mapeo())
+        {
+            var enty = db.Entry(usuarioElminado);
+            enty.State = EntityState.Deleted;
+            db.SaveChanges();
+        }
+
+    }
 }
