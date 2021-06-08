@@ -24,7 +24,6 @@ public partial class View_Registro : System.Web.UI.Page
         usuario.FechaNacimiento = DateTime.Parse(TB_FechaNacimiento.Text);
         usuario.Correo = TB_CorreoRegistro.Text;
         usuario.Direccion = TB_DireccionRegistro.Text;
-        usuario.Foto_user = int.Parse(FileUpload1.Text);
         usuario.Telefono = int.Parse(L_EdadCalc.Text);
         usuario.Tipo_usuario = int.Parse(DDL_Roles.SelectedValue);
 

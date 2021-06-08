@@ -11,4 +11,6 @@ public partial class View_Inicio : System.Web.UI.Page
     {
 
     }
+
+   
 }

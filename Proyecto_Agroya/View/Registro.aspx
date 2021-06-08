@@ -144,7 +144,7 @@
                 <asp:DropDownList ID="DDL_Roles" runat="server" DataSourceID="ODS_Roles" DataTextField="Tipo_usuario" DataValueField="Id_rol" Width="90%">
                     
                 </asp:DropDownList>
-                <asp:RangeValidator ID="RV_DDL_Cargos" runat="server" ControlToValidate="DDL_Cargos" ErrorMessage="*" Font-Bold="True" Font-Size="X-Large" ForeColor="Red" MaximumValue="10000" MinimumValue="1" Type="Integer"></asp:RangeValidator>
+                <asp:RangeValidator ID="RV_DDL_Cargos" runat="server" ControlToValidate="DDL_Roles" ErrorMessage="*" Font-Bold="True" Font-Size="X-Large" ForeColor="Red" MaximumValue="10000" MinimumValue="1" Type="Integer"></asp:RangeValidator>
                 
             </td>
 
