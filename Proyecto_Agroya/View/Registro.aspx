@@ -73,19 +73,18 @@
         <tr>
             <td class="auto-style35">
                 
-                <asp:Label ID="L_FechaNacimiento" runat="server" Font-Names="Arial" Font-Size="Medium" Text="Digite Fecha Nacimiento:"></asp:Label>
+                <asp:Label ID="L_NumeroDocumento" runat="server" Font-Names="Arial" Font-Size="Medium" Text="Digite su número de documento:"></asp:Label>
                 
             </td>
             <td class="auto-style36">
-                <asp:TextBox ID="TB_FechaNacimiento" runat="server" TextMode="Date" Width="90%" AutoPostBack="True" OnTextChanged="TB_FechaNacimiento_TextChanged"></asp:TextBox>
-                <asp:RequiredFieldValidator ID="RFV_TB_FechaNacimiento" runat="server" ControlToValidate="TB_FechaNacimiento" ErrorMessage="*" Font-Bold="True" Font-Size="X-Large" ForeColor="Red" SetFocusOnError="True"></asp:RequiredFieldValidator>
+               
+                <asp:TextBox ID="TB_DocumentoRegistrado" runat="server" TextMode="Number"></asp:TextBox>
+               
             </td>
             <td class="auto-style37">
-                <asp:Label ID="L_Edad" runat="server" Font-Names="Arial" Font-Size="Medium" Text="Esta es su Edad:"></asp:Label>
-            </td>
+                &nbsp;</td>
             <td class="auto-style35">
-                <asp:Label ID="L_EdadCalc" runat="server" Font-Names="Arial" Font-Size="Medium"></asp:Label>
-            </td>
+                &nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style9">
@@ -136,7 +135,7 @@
                 <asp:Label ID="Label3" runat="server" Font-Names="Arial" Font-Size="Medium" Text="Inserte una foto de perfil:"></asp:Label>
             </td>
             <td class="auto-style33">
-                <asp:FileUpload ID="FileUpload1" runat="server" />
+                <asp:FileUpload ID="FU_Fotoperfil" runat="server" />
             </td>
             <td class="auto-style38"><asp:Label ID="L_Cargo" runat="server" Font-Names="Arial" Font-Size="Medium" Text="Seleccione el Cargo:"></asp:Label></td>
             <td class="auto-style33">

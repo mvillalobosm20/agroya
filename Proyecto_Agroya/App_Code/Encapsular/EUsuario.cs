@@ -15,16 +15,15 @@ public class EUsuario
     private string foto_user;
     private string nombre;
     private string apellido;
-    private string tipo_documento;
     private int numero_documento;
     private string ciudad_residencia;
     private string direccion;
-    private double telefono;
+    private int telefono;
     private int tipo_usuario;
     private string token_verificacion;
     private Nullable<DateTime> token_reset;
     private int estado_user;
-    private DateTime fechaNacimiento;
+    
 
     [Key]
     [Column("id_user")]
@@ -43,8 +42,6 @@ public class EUsuario
     public string Nombre { get => nombre; set => nombre = value; }
     [Column("apellido")]
     public string Apellido { get => apellido; set => apellido = value; }
-    [Column("tipo_documento")]
-    public string Tipo_documento { get => tipo_documento; set => tipo_documento = value; }
     [Column("numero_documento")]
     public int Numero_documento { get => numero_documento; set => numero_documento = value; }
     [Column("ciudad_residencia")]
@@ -52,7 +49,7 @@ public class EUsuario
     [Column("direccion")]
     public string Direccion { get => direccion; set => direccion = value; }
     [Column("telefono")]
-    public double Telefono { get => telefono; set => telefono = value; }
+    public int Telefono { get => telefono; set => telefono = value; }
     [Column("tipo_usuario")]
     public int Tipo_usuario { get => tipo_usuario; set => tipo_usuario = value; }
     [Column("token_verificacion")]
@@ -61,6 +58,5 @@ public class EUsuario
     public DateTime? Token_reset { get => token_reset; set => token_reset = value; }
     [Column("estado_user")]
     public int Estado_user { get => estado_user; set => estado_user = value; }
-    [Column("fecha_nacimiento")]
-    public DateTime FechaNacimiento { get => fechaNacimiento; set => fechaNacimiento = value; }
+    
 }
