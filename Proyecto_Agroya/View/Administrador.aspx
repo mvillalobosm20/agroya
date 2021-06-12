@@ -4,22 +4,19 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-
-    <colgroup>
-    <col span="2" style="background-color:"#00773F />
-    <col style="background-color:white">
-  </colgroup>
-  <tr>
-    <th>BIENVENIDO ADMINISTRADOR</th>
-</tr>
-
-   
-    
-    <asp:GridView ID="GridView1" runat="server">
-    </asp:GridView>
-
-     <asp:ObjectDataSource ID="ODS_Usuario" runat="server" SelectMethod="obtenerEmpleados" TypeName="DAOEmpleado" DataObjectTypeName="EEmpleado" DeleteMethod="eliminar" UpdateMethod="editarEmpleado"></asp:ObjectDataSource>
-
+    <asp:Menu ID="M_Principal" runat="server" BackColor="#00773F" DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="Large" ForeColor="White" StaticSubMenuIndent="10px">
+                        <DynamicHoverStyle BackColor="#990000" ForeColor="White" />
+                        <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                        <DynamicMenuStyle BackColor="#FFFBD6" />
+                        <DynamicSelectedStyle BackColor="#FFCC66" />
+                        <Items>
+                            <asp:MenuItem Text="Consulta" Value="Consulta" NavigateUrl="~/View/ConsultaRegistro.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Insertar" Value="Insertar" NavigateUrl="~/View/InsertarEmpleado.aspx"></asp:MenuItem>
+                        </Items>
+                        <StaticHoverStyle BackColor="#990000" ForeColor="White" />
+                        <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                        <StaticSelectedStyle BackColor="#FFCC66" />
+                    </asp:Menu>
 
    
     

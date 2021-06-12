@@ -32,7 +32,6 @@ public class DAOUsuario
         }
 
     }
-
     public void actualizarUsuario(EUsuario user)
     {
         using (var db = new Mapeo())
@@ -44,6 +43,7 @@ public class DAOUsuario
             db.SaveChanges();
         }
     }
+
     public List<EUsuario> obtenerEstado()
     {
         using (var db = new Mapeo())
@@ -55,7 +55,7 @@ public class DAOUsuario
 
     public void registrarUsuario(EUsuario usuario)
     {
-      Mapeo a = new Mapeo();
+        Mapeo a = new Mapeo();
         a.usuario.Add(usuario);
         a.SaveChanges();
     }
@@ -78,6 +78,7 @@ public class DAOUsuario
 
         return lista.OrderBy(x => x.Tipo_usuario).ToList();
     }
+}
 
 
 
